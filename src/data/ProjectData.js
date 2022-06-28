@@ -7,8 +7,14 @@ import tour from '../assets/tour-setup.png';
 import lorem from '../assets/lorem-ipsum.png';
 import cart from '../assets/use-reducer.png';
 import reviews from '../assets/review-setup.png';
+import Todo from '../assets/Todo-App.png';
 
 export const ProjectData = [
+  {
+    name: 'Todo-App',
+    image: Todo,
+    link: 'https://todo-rouge-three.vercel.app/',
+  },
   {
     name: 'Cocktail',
     image: cocktail,
