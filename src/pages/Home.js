@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Home.css';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
 import GithubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 
 const Home = () => {
   return (
@@ -11,9 +11,24 @@ const Home = () => {
         <h2>Hi, My Name Is Girish</h2>
         <div className='prompt'>
           <p>A software developer with passion for learning and creating</p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GithubIcon />
+          <LinkedInIcon
+            onClick={() =>
+              (window.location.href =
+                'https://www.linkedin.com/in/girish-chalumuri-089908240/')
+            }
+          />
+
+          <GithubIcon
+            onClick={() =>
+              (window.location.href = 'https://github.com/chalumurigirish')
+            }
+          />
+          <EmailIcon
+            onClick={() =>
+              (window.location.href =
+                'https://accounts.google.com/b/1/AddMailService')
+            }
+          />
         </div>
       </div>
       <div className='skills'>
@@ -21,21 +36,38 @@ const Home = () => {
         <ol className='list'>
           <li className='item'>
             <h2>Front-End</h2>
-            <span>
-              HTML,CSS, React-JS, NEXT-JS, Chakra-ui, Mantine-JS, Material-UI
-            </span>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React-JS</li>
+              <li>Next-JS</li>
+              <li>Chakra-UI</li>
+              <li>Tailwind CSS</li>
+              <li>Mantine-UI</li>
+              <li>Material-UI</li>
+            </ul>
           </li>
         </ol>
         <ol className='list'>
           <li className='item'>
             <h2>Back-End</h2>
-            <span>Express, Mongo-DB, Mongoose, Hasura </span>
+            <ul>
+              <li>Express</li>
+              <li> Mongo-DB </li>
+              <li>Mongoose</li>
+              <li>Hasura</li>
+            </ul>
           </li>
         </ol>
         <ol className='list'>
           <li className='item'>
             <h2>Programming Languages</h2>
-            <span>C*, Python, JavaScript, TypeScript</span>
+            <ul>
+              <li>C</li>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>Typescript</li>
+            </ul>
           </li>
         </ol>
       </div>
